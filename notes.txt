@@ -1,0 +1,8 @@
+user auth
+spotify api
+responsive design
+material ui
+react context api (like redux)
+hooks
+modern tech
+entire react tech stack

@@ -1,3 +1,9 @@
+/* by defualt, space of 10 in react */
+* {
+  margin: 0;  
+  /* padding: 0; */
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
