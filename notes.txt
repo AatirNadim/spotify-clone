@@ -6,3 +6,8 @@ react context api (like redux)
 hooks
 modern tech
 entire react tech stack
+
+
+on spotify login button click --> 
+1. redirect to spotify login
+2. redirect to home page with the response of login event.
