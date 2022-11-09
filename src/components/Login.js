@@ -9,7 +9,7 @@ const Login = () => {
         <img src = 'https://getheavy.com/wp-content/uploads/2019/12/spotify2019-830x350.jpg'
         alt = ''
         />
-        <a href={loginUri}>{'LOGIN WITH SPOTIFY'}</a>
+        <a href={loginUri} style={{textDecoration: 'none'}}>{'LOGIN WITH SPOTIFY'}</a>
     </div>
   )
 }
