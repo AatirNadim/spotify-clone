@@ -4,10 +4,15 @@ import './App.css';
 import Login from './components/Login';
 import Player from './components/Player'
 import { getTokenFromResponse } from './components/spotify';
+
+import SpotifyWebApi from 'spotify-web-api-js';
+//supports a bunch of functionalities
+const spot = new SpotifyWebApi();
 // import 
 function App() {
   //runs the code based on some condition
   const [token, setToken] = useState(null) //temporary storage, session storage, all lost while reloading
+
   useEffect(() => {
     const hash = getTokenFromResponse();
     console.log(hash);
@@ -15,6 +20,11 @@ function App() {
     const _token = hash.access_token;
     if(_token) {
       setToken(_token)
+      spot.setAccessToken(_token);
+      spot.getMe() //returns a promise
+      .then((user) => {
+        console.log(user);
+      })
     }
   }, []);
   // keep the value based on the change of which, we want the useeffect code to run
