@@ -11,3 +11,16 @@ entire react tech stack
 on spotify login button click --> 
 1. redirect to spotify login
 2. redirect to home page with the response of login event.
+
+
+data layer -->
+why is it required--> in the tree of hierarchy, in case of props passing on to children to children of the parent, it is termed as prop drilling., we can avoid this with the data layer. -->
+react context api
+
+tightly coupled code --> any change in some component of code, should not affect the other part
+
+react context --> user friendly redux
+
+data layer components --> user, playlist, current song, items
+
+how to interact with the context api --> dispatch action to it
