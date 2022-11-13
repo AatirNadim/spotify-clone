@@ -4,11 +4,15 @@
     height: fit-content;
     cursor: pointer;
     margin: 10px 0;
-    font-weight: 700;
+    font-weight: 500;
     /* padding: 0; */ 
     /* vertical-al ign: middle; */
     transition: 150ms color ease-in;
+    display: flex;
 }
 .Sidebar_Options__main:hover {
     color: white;
+}
+.Sidebar_Options__Icon {
+    margin-right: 10px;
 }

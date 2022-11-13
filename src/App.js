@@ -41,9 +41,9 @@ function App() {
     }
   }, []);
 
-  useEffect(()=>{
-    // console.log({globalUser})
-  },[globalUser])
+  // useEffect(() => 
+    // console.log('in the user useeffect', globalUser)
+  // }, [globalUser])
   useEffect(() => {
     // console.log({token})
   }, [token])
