@@ -1,4 +1,9 @@
+
 /* by defualt, space of 10 in react */
+/* hide the scrollbar, in the entire window */
+body::-webkit-scrollbar {
+  display: none;
+}
 * {
   margin: 0;  
   /* padding: 0; */
@@ -20,5 +25,5 @@ code {
 }
 
 div { 
-  color: red;
+  /* color: red; */
 }

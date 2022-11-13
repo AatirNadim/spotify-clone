@@ -2,9 +2,40 @@
     position: fixed;
     bottom:0;
     height: 65px;
-    width: 100%;
+    width: 98.5%;
     color: antiquewhite;
     background-color: #282828;
-    padding: 20px;
+    /* background-color: red; */
+    padding: 10px;
     /* font-weight: 800; */
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    text-align: center;
+}
+
+.footer__left {
+    flex : 0.3;
+}
+.footer__center {
+    flex : 0.4;
+    padding: 0 100px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    max-width: 300px;
+}
+.footer__right {
+    flex : 0.3;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.Playbar__shuffle {
+    /* color: green; */
+}
+.Playbar__play {
+    font-size: larger;
 }
