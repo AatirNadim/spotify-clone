@@ -19,7 +19,9 @@ function Sidebar() {
       {/* <div className={styles.Sidebar__title}>{'Liked Songs'}</div> */}
       <hr className={styles.Sidebar__hr}/> 
 
-      {/* <SidebarOptions title = {'HIP HOP'}/> */}
+      <SidebarOptions title = {'staticHip Hop'}/>
+      <SidebarOptions title = {'staticRock'}/>
+      <SidebarOptions title = {'staticRnB'}/>
 
     </div>
 

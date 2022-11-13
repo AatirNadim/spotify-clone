@@ -29,9 +29,21 @@ function App() {
       spot.getMe() //returns a promise
       .then((user) => {
         // console.log(user);
-        dispatch ({
+        dispatch ({    //we dispatch the action object
           type : 'SET_USER',
           user : user, 
+        })
+      })
+      .catch(err => {
+        alert('An error has occured. Please try again later or contact the service provider if the issue persists');
+        console.error(err);
+      })
+
+      spot.getUserPlaylists().then((playlists) => {
+        console.log('playlist recieved');
+        dispatch({
+          type : 'SET_PLAYLISTS',
+          playlists : playlists,
         })
       })
       .catch(err => {

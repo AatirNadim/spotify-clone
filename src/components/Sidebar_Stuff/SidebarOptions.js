@@ -6,7 +6,8 @@ const SidebarOptions = ({ title , Icon }) => {
     return (
         <div className={styles.Sidebar_Options__main}>
             {Icon && <Icon className = {styles.Sidebar_Options__Icon}/>}
-            {Icon? <h4 style={{fontWeight : '700'}}>{title}</h4>:<p>{title}</p>}
+            {Icon? <h4 style={{fontWeight : '700'}}>{title}</h4>
+            :<p style={{fontWeight : '700'}}>{title}</p>}
             {/* <p>thihterhtirh</p> */}
             {/* this element does not get styled in case the css is not defined for it specifically, the css of the parent element has lower priority than index.css */}
         </div>
