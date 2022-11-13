@@ -11,20 +11,24 @@ const spot = new SpotifyWebApi();
 // import 
 function App() {
   //runs the code based on some condition
-  const [token, setToken] = useState(null) //temporary storage, session storage, all lost while reloading
-  const [{}, dispatch] = useStateValue();
+  // const [token, setToken] = useState(null) //temporary storage, session storage, all lost while reloading
+  const [{user: globalUser, token}, dispatch] = useStateValue();
 
   useEffect(() => {
     const hash = getTokenFromResponse();
-    console.log(hash);
+    console.log({desc : 'hash value', hash});
     window.location.hash = "";
-    const _token = hash.access_token;
+    const _token = hash.access_token;     
     if(_token) {
-      setToken(_token)
+      // setToken(_token)
       spot.setAccessToken(_token);
+      dispatch({
+        type : 'SET_TOKEN',
+        token : _token,
+      })
       spot.getMe() //returns a promise
       .then((user) => {
-        console.log(user);
+        // console.log(user);
         dispatch ({
           type : 'SET_USER',
           user : user, 
@@ -36,6 +40,13 @@ function App() {
       })
     }
   }, []);
+
+  useEffect(()=>{
+    // console.log({globalUser})
+  },[globalUser])
+  useEffect(() => {
+    // console.log({token})
+  }, [token])
   // keep the value based on the change of which, we want the useeffect code to run
 
   return (
@@ -43,7 +54,7 @@ function App() {
       {/* <h2>This is the spotify clone.</h2> */}
       {/* spotify logo */}
       {/* login with spotify button */}
-      {token ? <Player/> : <Login/>}
+      {token ? <Player spotify = {spot}/> : <Login/>}
       {/* <Login /> */}
       {/* or sign up */}
     </div>

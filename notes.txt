@@ -24,3 +24,5 @@ react context --> user friendly redux
 data layer components --> user, playlist, current song, items
 
 how to interact with the context api --> dispatch action to it
+
+in order to set the flex for children as 0.2, 0.8, set it in the children's css body

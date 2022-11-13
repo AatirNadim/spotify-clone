@@ -1,0 +1,10 @@
+.body__main {
+    padding: 30px;
+    /* border: 1px red solid; */
+    flex: 0.8;
+    /* background-color:  */
+    background: linear-gradient(to bottom, rgb(91, 87, 115), rgb(0,0,0));
+    height: 100vh;
+    color: white;
+
+}

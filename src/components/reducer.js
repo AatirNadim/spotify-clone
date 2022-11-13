@@ -2,7 +2,8 @@ export const initialState = {
     user : null, 
     playlists : [],
     playing : false,
-    item : null 
+    item : null,
+    token : null,   
 };
 // dispatch an action, based on the action, on the current state    
 const reducer = (state, action) => {
@@ -13,7 +14,11 @@ const reducer = (state, action) => {
             ...state,  //appending onto the original state
             user : action.user, //user defined in the initial state
         }
-
+        case 'SET_TOKEN' :
+            return {
+                ...state,
+                token : action.token,
+            };
         default :
         return state;
     }
