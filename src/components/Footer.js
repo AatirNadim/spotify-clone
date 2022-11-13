@@ -18,7 +18,11 @@ function Footer() {
   return (
     <div className={styles.footer__main}>
       <div className= {styles.footer__left}>
-      
+        <img className = {styles.album__logo} src = "" alt = "song thumb"/>
+        <div className = {styles.footer__songInfo}>
+          <h4 className={styles.footer__left__songInfo}>{'song name'}</h4>
+          <p className = {styles.footer__left__artistInfo}>{'artist info'}</p>
+        </div>
 
       </div>
       <div className= {styles.footer__center}>
