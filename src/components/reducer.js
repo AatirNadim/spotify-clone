@@ -7,9 +7,10 @@ export const initialState = {
 };
 // dispatch an action, based on the action, on the current state    
 const reducer = (state, action) => {
-    console.log(action);
+    // console.log(action);
     switch(action.type) {
         case 'SET_USER' : 
+        console.log(action);
         return { //return the new state, after dispatching the action
             ...state,  //appending onto the original state
             user : action.user, //user defined in the initial state
@@ -19,7 +20,7 @@ const reducer = (state, action) => {
                 ...state,
                 token : action.token,
             };
-        case 'SET_PLAYISTS' :
+        case 'SET_PLAYLISTS' :
             return {
                 ...state,
                 playlists : action.playlists,   

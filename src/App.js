@@ -12,15 +12,16 @@ const spot = new SpotifyWebApi();
 function App() {
   //runs the code based on some condition
   // const [token, setToken] = useState(null) //temporary storage, session storage, all lost while reloading
-  const [{user: globalUser, token}, dispatch] = useStateValue();
+  const [{user: globalUser, token, playlists}, dispatch] = useStateValue();
 
   useEffect(() => {
     const hash = getTokenFromResponse();
-    console.log({desc : 'hash value', hash});
+    // console.log({desc : 'hash value', hash});
     window.location.hash = "";
     const _token = hash.access_token;     
     if(_token) {
       // setToken(_token)
+      console.log(_token)
       spot.setAccessToken(_token);
       dispatch({
         type : 'SET_TOKEN',
@@ -39,7 +40,8 @@ function App() {
         console.error(err);
       })
 
-      spot.getUserPlaylists().then((playlists) => {
+      spot.getUserPlaylists()
+      .then((playlists) => {
         console.log('playlist recieved');
         dispatch({
           type : 'SET_PLAYLISTS',
@@ -60,7 +62,9 @@ function App() {
     // console.log({token})
   }, [token])
   // keep the value based on the change of which, we want the useeffect code to run
-
+  useEffect(() =>  {
+    // console.log({val : 'useEffect', playlists})
+  }, [playlists])
   return (
     <div className='app'>
       {/* <h2>This is the spotify clone.</h2> */}
