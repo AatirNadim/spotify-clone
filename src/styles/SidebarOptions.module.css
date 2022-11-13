@@ -1,3 +1,14 @@
 .Sidebar_Options__main {
     /* color: green; */
+    color: grey;
+    height: fit-content;
+    cursor: pointer;
+    margin: 10px 0;
+    font-weight: 700;
+    /* padding: 0; */ 
+    /* vertical-al ign: middle; */
+    transition: 150ms color ease-in;
+}
+.Sidebar_Options__main:hover {
+    color: white;
 }

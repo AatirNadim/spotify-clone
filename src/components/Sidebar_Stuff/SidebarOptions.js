@@ -4,7 +4,7 @@ import styles from '../../styles/SidebarOptions.module.css'
 const SidebarOptions = ({ title , Icon }) => {
     return (
         <div className={styles.Sidebar_Options__main}>
-            <p>{title}</p>
+            <span>{Icon}</span><p>{title}</p>
         </div>
     );
 }
