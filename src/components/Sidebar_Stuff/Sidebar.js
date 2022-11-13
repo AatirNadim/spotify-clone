@@ -14,7 +14,15 @@ function Sidebar() {
       <SidebarOptions title = {'Home'} Icon = {HomeIcon}/>
       <SidebarOptions title = {'Search'} Icon = {SearchIcon}/>
       <SidebarOptions title = {'Your Library'} Icon = {LibraryMusicIcon}/>
+      <br/>
+      <div className={styles.Sidebar__title}>{'Playlists'}</div>
+      {/* <div className={styles.Sidebar__title}>{'Liked Songs'}</div> */}
+      <hr className={styles.Sidebar__hr}/> 
+
+      {/* <SidebarOptions title = {'HIP HOP'}/> */}
+
     </div>
+
     // <div className = "spotify__logo">
       /* */
     // </div>

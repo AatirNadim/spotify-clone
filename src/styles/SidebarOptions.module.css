@@ -9,6 +9,7 @@
     /* vertical-al ign: middle; */
     transition: 150ms color ease-in;
     display: flex;
+    align-items: center;
 }
 .Sidebar_Options__main:hover {
     color: white;

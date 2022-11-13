@@ -24,3 +24,16 @@
 /* div{ */
     /* color: red; */
 /* } */
+.Sidebar__hr {
+    /* background-color: red; */
+    border: none;
+    background-color: rgb(111, 110, 110);
+    height: 1px;    
+    /* margin:10px auto; */
+    margin: 12px auto;
+}
+.Sidebar__title {
+    color: grey;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
