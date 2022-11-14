@@ -1,0 +1,32 @@
+.header__main {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    overflow-wrap: break-word;
+    overflow: hidden;
+}
+
+.header__search {
+    color: grey;
+}
+.header__left {
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    width: 24vw;
+    height: 40px;
+    flex: 0.6;
+    min-width: 80px;
+}
+
+.header__input {
+    border: none;
+    width: 74%;
+    overflow: hidden;
+    /* padding-right: 3%; */
+}
+.header__right {
+    display: flex;
+    align-items: center;
+}
