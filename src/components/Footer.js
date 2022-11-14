@@ -41,7 +41,7 @@ function Footer() {
               <VolumeDownIcon />
           </Grid>
           <Grid item xs>
-              <Slider 
+              <Slider className = {styles.footer__slider} 
               // size='small'
               aria-labelledby="continuous-slider" />
           </Grid>

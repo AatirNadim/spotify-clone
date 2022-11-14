@@ -34,6 +34,7 @@
     display: flex;
     justify-content: space-between;
     max-width: 300px;
+    /* align-items: center; */
 }
 .footer__right {
     flex : 0.3;
@@ -43,9 +44,28 @@
     align-items: center;
 
 }
-.Playbar__shuffle {
-    /* color: green; */
-}
+
 .Playbar__play {
     font-size: larger;
+}
+.footer__slider {
+    color: white;
+}
+.footer__songInfo {
+    text-align: left;
+}
+.footer__left__songInfo {
+    margin-bottom: 5px;
+}
+.footer__left__artistInfo {
+    font-size: 12px;
+    color: rgb(165, 163, 163);
+}
+
+
+.Playbar__shuffle:hover, .Playbar__repeat:hover {
+    /* color: green; */
+    transition: transform 0.3s ease-out, color 0.3s ease-out;
+    transform: scale(1.2) !important;
+    color : green;
 }
