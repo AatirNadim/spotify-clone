@@ -45,11 +45,14 @@
 
 }
 
-.Playbar__play {
-    font-size: larger;
+.Playbar__play, .Playbar__prev, .Playbar__next{
+    font-size: 28px;
+    
 }
-.footer__slider {
-    color: white;
+
+.footer__slider:hover {
+    transition: color 0.3s ease-out;
+    color: green;
 }
 .footer__songInfo {
     text-align: left;
@@ -62,10 +65,34 @@
     color: rgb(165, 163, 163);
 }
 
-
+/* 
 .Playbar__shuffle:hover, .Playbar__repeat:hover {
-    /* color: green; */
+    color: green;
     transition: transform 0.3s ease-out, color 0.3s ease-out;
     transform: scale(1.2) !important;
     color : green;
+} */
+
+.footer__center > *:hover {
+    transition: transform 0.3s ease-out, color 0.3s ease-out;
+    transform: scale(1.2);
+    color: green;
+}
+/* .footer__right__grid > *:hover {
+    transition: color 0.3s ease-out;
+    color: green;
+} */
+
+/* .footer__right * .MuiSlider-root:hover {
+    transition: color 0.3s ease-out;
+    color: green;
+} */
+
+/* .footer__queue:hover, .footer__down:hover {
+    transition: color 0.3s ease-out;
+    color: green;
+} */
+.footer__slider {
+    color: white;
+    /* background-color: red; */
 }

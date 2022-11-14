@@ -33,12 +33,12 @@ function Footer() {
         <RepeatIcon className = {styles.Playbar__repeat}/>
       </div>
       <div className= {styles.footer__right}>
-        <Grid container spacing={2}>
+        <Grid container spacing={2} className = {styles.footer__right__grid}>
           <Grid item>
-              <QueueMusicRoundedIcon/>
+              <QueueMusicRoundedIcon className = {styles.footer__queue}/>
           </Grid>
           <Grid item>
-              <VolumeDownIcon />
+              <VolumeDownIcon className = {styles.footer__down}/>
           </Grid>
           <Grid item xs>
               <Slider className = {styles.footer__slider} 

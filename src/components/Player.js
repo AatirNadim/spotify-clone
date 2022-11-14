@@ -11,7 +11,7 @@ const Player = ({spotify}) => {
       {/* {'this is the body of the player'} */}
       <div className = {styles.player__main}>
         <Sidebar/>
-        <Body/>
+        <Body spotify = {spotify}/>
       </div>
       <Footer/>
       {/* // footer */}
