@@ -8,3 +8,53 @@
     color: white;
     font-weight: 500;
 }
+.body__info {
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+}
+.body__info > img {
+    min-height: 210px;
+    height: 20vw;
+    margin: 0 20px;
+    box-shadow: 0 4px 60px rgba(0,0,0,0.5);
+
+    /* margin-right: auto; */
+}
+.body__infoText {
+    flex: 1;
+}
+
+.body__infoText > h2 {
+    font-size: 6.5vw;
+    font-weight: 750;
+    margin-bottom: 10px;
+}
+
+.body__infoText > p {
+    font-size: 14px;
+}
+
+.body__songs {
+    margin: 20px -30px;
+}
+
+.body__icons {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.body__icons > * {
+    margin-right:20px;
+}
+.body__play {
+    font-size: 80px !important; /*keeping the important tag here, really comes in handy*/
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 23px;
+}
+.body__play :hover {
+    transition: 100ms ease-out transform;
+    transform: scale(1.08);
+}

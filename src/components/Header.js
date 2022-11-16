@@ -6,7 +6,6 @@ import Avatar from '@mui/material/Avatar';
 import { useStateValue } from './Stateprovider'
 const Header = ({spotify}) => {
     const [{user}, dispatch] = useStateValue();
-    console.log('user -->\n', {user});
     return (
         <div className = {styles.header__main}>
             <div className = {styles.header__left}>

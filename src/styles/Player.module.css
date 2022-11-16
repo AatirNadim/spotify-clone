@@ -1,5 +1,6 @@
 .player__body {
     /* height: 100%; */
+    height: 100vh;
 }
 .player__main {
     display: flex;
