@@ -23,16 +23,15 @@ function Body({spotify}) {
           </div>
       </div>
       <div className = {styles.body__songs}>
-        {'songs come here'}
         <div className = {styles.body__icons}>
           <PlayCircleFilledIcon className = {styles.body__play}/>
           <FavoriteIcon />
           <MoreHorizIcon/>
         </div>
         {/* list of songs */}
-        {/* {discover_weekly?.tracks.items.map((item) => {
+        {discover_weekly?.tracks.items.map((item) => {
           return <Songrow track = {item.track}/>
-        })} */}
+        })}
       </div>
     </div>
   )

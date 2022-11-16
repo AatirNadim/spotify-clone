@@ -7,6 +7,23 @@
     height: 100vh;
     color: white;
     font-weight: 500;
+    overflow-y: auto;
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgb(109, 108, 108);
+}
+::-webkit-scrollbar-track {
+    /* display: none; */
+    background-color: rgb(45, 43, 57);
+}
+::-webkit-scrollbar-thumb:hover {
+    transition: 3000ms width ease-out, 3000ms background-color ease-out;
+    background-color: green;
+    width: 10px;
 }
 .body__info {
     display: flex;
@@ -54,11 +71,7 @@
     margin-top: 20px;
     margin-left: 50px;
 }
-.body__play:hover {
+.body__icons >*:hover {
     transition: 100ms ease-out color;
     color: green;
-}
-.body__play :hover {
-    transition: 100ms ease-out transform;
-    transform: scale(1.08);
 }

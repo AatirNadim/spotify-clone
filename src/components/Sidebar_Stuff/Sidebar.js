@@ -24,9 +24,9 @@ function Sidebar() {
       {/* <div className={styles.Sidebar__title}>{'Liked Songs'}</div> */}
       <hr className={styles.Sidebar__hr}/> 
 
-      <SidebarOptions title = {'staticHip Hop'}/>
-      <SidebarOptions title = {'staticRock'}/>
-      <SidebarOptions title = {'staticRnB'}/>
+      <SidebarOptions title = {'Static Playlist'}/>
+      {/* <SidebarOptions title = {'staticRock'}/>
+      <SidebarOptions title = {'staticRnB'}/> */}
       {playlists?.items?.map((playlist) => {
         return <SidebarOptions title = {playlist.name}/>;
       })}

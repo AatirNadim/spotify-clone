@@ -30,3 +30,5 @@ in order to set the flex for children as 0.2, 0.8, set it in the children's css 
 length in percentage won't work in case the parent element corresponding length is not defined
 
 something doesnt render out the way you want it to, declare the styles with !important.
+
+how to set the overflow of list right??

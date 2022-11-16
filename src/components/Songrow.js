@@ -4,7 +4,7 @@ const Songrow = (props) => {
     const track = props.track
     return (
         <div className={styles.songrow__main}>
-            <img src = "" alt = "" className = {styles.songrow__album}/>
+            <img src = {track?.album.images[0].url} alt = "img" className = {styles.songrow__album}/>
             <div className = {styles.songrow__info}>
                 <h1>{track.name}</h1>
                 <p>

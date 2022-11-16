@@ -7,16 +7,26 @@
     color: white;
 }
 
-.songRow__main:hover {
+.songrow__main:hover {
+    transition: 100ms background-color ease-out;
     background-color: black;
     cursor: pointer;
     opacity: 0.8;
 }
-
+.songrow__album {
+    height: 40px;
+    width: 40px;
+}
 .songrow__info {
     margin-left: 20px;
 }
 
 .songrow__info > h1 {
     font-size: 16px;
+}
+
+.songrow__info >p {
+    color: grey;
+    font-size: 14px;
+    margin-top: 3px   
 }
