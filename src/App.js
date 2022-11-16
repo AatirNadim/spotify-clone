@@ -52,6 +52,18 @@ function App() {
         alert('An error has occured. Please try again later or contact the service provider if the issue persists');
         console.error(err);
       })
+
+      spot.getPlaylist('37i9dQZEVXcPhJyRzew0Ip').then((response) => {
+        console.log('inside the get playlist api resolve')
+        dispatch({
+          type : 'SET_DISCOVER_WEEKLY',
+          discover_weekly : response,
+        })
+      })
+      .catch(err => {
+        alert('some error has occured in fetching the playlist')
+        console.log(err);
+      })
     }
   }, []);
 

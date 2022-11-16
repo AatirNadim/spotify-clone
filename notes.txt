@@ -26,3 +26,7 @@ data layer components --> user, playlist, current song, items
 how to interact with the context api --> dispatch action to it
 
 in order to set the flex for children as 0.2, 0.8, set it in the children's css body
+
+length in percentage won't work in case the parent element corresponding length is not defined
+
+something doesnt render out the way you want it to, declare the styles with !important.
