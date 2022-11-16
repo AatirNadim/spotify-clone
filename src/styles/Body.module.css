@@ -52,7 +52,11 @@
     font-size: 80px !important; /*keeping the important tag here, really comes in handy*/
     margin-bottom: 20px;
     margin-top: 20px;
-    margin-left: 23px;
+    margin-left: 50px;
+}
+.body__play:hover {
+    transition: 100ms ease-out color;
+    color: green;
 }
 .body__play :hover {
     transition: 100ms ease-out transform;
